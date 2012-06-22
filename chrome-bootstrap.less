@@ -1,0 +1,129 @@
+body {
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: 75%;
+  cursor: default;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  -webkit-user-select: none;
+  font-weight: normal;
+  line-height: 1;
+}
+h1 {
+  -webkit-margin-after: 1em;
+  -webkit-margin-before: 21px;
+  -webkit-margin-start: 23px;
+  color: #5C6166;
+  font-size: 18px;
+}
+h3 {
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.frame {
+  .navigation {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 15px;
+    width: 155px;
+    z-index: 3;
+  }
+  .view {
+    -webkit-margin-start: 155px;
+    max-width: 738px;
+
+    a {
+      border: none;
+      color: #15C;
+      cursor: pointer;
+      font: inherit;
+    }
+  }
+}
+
+header {
+  max-width: 738px;
+  min-width: 600px;
+  position: relative;
+
+  h1 {
+    padding: 21px 0 13px;
+    margin: 0;
+    border-bottom: 1px solid #EEE;
+  }
+
+  .corner {
+    position: absolute;
+    right: 0px;
+    top: 21px;
+  }
+}
+
+section {
+  -webkit-padding-start: 18px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  max-width: 600px;
+
+  h3 {
+    -webkit-margin-start: -18px;
+  }
+}
+
+.controls {
+  -webkit-padding-end: 3px;
+  -webkit-padding-start: 4px;
+  -webkit-transition: padding 100ms, height 100ms, opacity 100ms;
+  border-bottom: 1px solid #EEE;
+  display: -webkit-box;
+  overflow: hidden;
+
+  .spacer {
+    -webkit-box-flex: 1;
+  }
+}
+
+ul.menu {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 2em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    -webkit-border-start: 6px solid transparent;
+    -webkit-padding-start: 18px;
+    -webkit-user-select: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+
+    &.selected {
+      -webkit-border-start-color: rgb(78, 87, 100);
+      cursor: default;
+      pointer-events: none;
+
+      a {
+        color: #464E5A;
+      }
+    }
+
+    a {
+      background-color: white;
+      border: 0;
+      color: #999;
+      cursor: pointer;
+      font: inherit;
+      line-height: 29px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+  }
+}
