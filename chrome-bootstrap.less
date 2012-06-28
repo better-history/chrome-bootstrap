@@ -6,9 +6,9 @@ body {
 }
 a {
   text-decoration: none;
-}
-a:hover, a:focus {
-  outline: none;
+  &:hover, &:focus {
+    outline: none;
+  }
 }
 ul, ol {
   padding: 0;
@@ -16,8 +16,10 @@ ul, ol {
 li {
   list-style-type:none;
 }
-dl, dt, dd {
-  margin:0;
+dl {
+  dt, dd {
+    margin:0;
+  }
 }
 button {
   cursor: pointer;
@@ -114,6 +116,10 @@ header {
     position: absolute;
     right: 0px;
     top: 21px;
+
+    input[type="text"] {
+      width: 210px;
+    }
   }
 }
 
