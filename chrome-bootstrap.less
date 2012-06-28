@@ -4,6 +4,24 @@ body {
   cursor: default;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  outline: none;
+}
+ul, ol {
+  padding: 0;
+}
+li {
+  list-style-type:none;
+}
+dl, dt, dd {
+  margin:0;
+}
+button {
+  cursor: pointer;
+}
 
 
 /* Headings
@@ -26,6 +44,11 @@ h3 {
   font-size: 1.2em;
   margin-bottom: 0.8em;
 }
+.sub_title {
+  font-size:15px;
+  margin:0 10px;
+  color:#53637D;
+}
 
 
 /* Layout
@@ -40,9 +63,12 @@ h3 {
     width: 155px;
     z-index: 3;
   }
+  .view, .content {
+    width: 738px;
+    overflow-x: hidden;
+  }
   .view {
     -webkit-margin-start: 155px;
-    max-width: 738px;
 
     a {
       border: none;
@@ -50,6 +76,22 @@ h3 {
       cursor: pointer;
       font: inherit;
     }
+  }
+  .mainview > * {
+    -webkit-margin-start: -20px;
+    -webkit-transition: margin 100ms, opacity 100ms;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+  .mainview > .selected {
+    -webkit-margin-start: 0;
+    -webkit-transition: margin 200ms, opacity 200ms;
+    -webkit-transition-delay: 100ms;
+    z-index: 1;
+    opacity: 1;
   }
 }
 
@@ -364,6 +406,7 @@ select:active:enabled {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 5;
 
   .page {
     -webkit-border-radius: 3px;
