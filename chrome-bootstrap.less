@@ -16,10 +16,8 @@ ul, ol {
 li {
   list-style-type:none;
 }
-dl {
-  dt, dd {
-    margin:0;
-  }
+dl, dt, dd {
+  margin:0;
 }
 button {
   cursor: pointer;
@@ -209,6 +207,50 @@ ul.menu {
       display: block;
     }
   }
+}
+
+
+/* Highlighted list
+============================================== */
+.highlighted {
+  li {
+    &:hover {
+      *:not(.match) {
+        background-color: #F0F6FE;
+        color: #555;
+      }
+    }
+    .visit a {
+      position:relative;
+      z-index:0;
+      display:block;
+      position:relative;
+      margin:5px 3px 0 0;
+      font-size: 12px
+    }
+    a {
+      padding: 5px;
+      display: block;
+      margin: 2px 0;
+      position: relative;
+      z-index: 0;
+    }
+    dt {
+      font-size: 105%;
+      padding-bottom: 3px;
+    }
+    dd {
+      color: #999;
+      overflow:hidden;
+      white-space: nowrap;
+      font-size: 11px;
+    }
+  }
+}
+.match {
+  background: #f2f37b;
+  display: inline-block;
+  margin: 0 1px;
 }
 
 
