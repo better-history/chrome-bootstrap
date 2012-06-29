@@ -5,151 +5,183 @@
   <title>Chrome Bootstrap</title>
   <link rel="stylesheet/less" type="text/css" href="chrome-bootstrap.less">
   <script src="less-1.3.0.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <style>
     .overlay {
       position: relative;
     }
   </style>
+  <script>
+    $(function() {
+      $('.menu a').click(function(ev) {
+        ev.preventDefault();
+        var selected = 'selected';
+        $('.mainview > *').removeClass(selected);
+        $('.menu li').removeClass(selected);
+        $(ev.currentTarget).parent().addClass(selected);
+        $($(ev.currentTarget).attr('href')).addClass(selected);
+      });
+    });
+  </script>
 </head>
 <body class="frame">
   <div class="navigation">
     <h1>Bootstrap</h1>
     <ul class="menu">
-      <li>
-        <a href="#">Option 1</a>
-      </li>
       <li class="selected">
-        <a href="#">Option 2</a>
+        <a href="#one">Option 1</a>
+      </li>
+      <li>
+        <a href="#two">Option 2</a>
       </li>
     </ul>
     <ul class="menu">
       <li>
-        <a href="#">Option 2</a>
+        <a href="#three">Settings</a>
       </li>
     </ul>
   </div>
-  <div class="view">
-    <header>
-    <h1>Example<span class="sub_title">Some sub title text</span></h1>
-      <div class="corner">
-        <input type="text" placeholder="a text box" />
+  <div class="mainview view">
+    <div id="one" class="selected">
+      <header>
+        <h1>Example<span class="sub_title">Some sub title text</span></h1>
+        <div class="corner">
+          <input type="text" placeholder="a text box" />
+        </div>
+      </header>
+      <div class="controls">
+        <button>Load extensions</button>
+        <button disabled="disabled">Pack extensions...</button>
+        <div class="spacer"></div>
+        <button>Update extensions</button>
       </div>
-    </header>
-    <div class="controls">
-      <button>Load extensions</button>
-      <button disabled="disabled">Pack extensions...</button>
-      <div class="spacer"></div>
-      <button>Update extensions</button>
-    </div>
-    <div class="content">
-      <ul class="highlighted">
-        <li>
-          <a href="#">
-            <dl>
-              <dt><span class="match">Number</span> 1</dt>
-              <dd>Supporting data here</dd>
-            </dl>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <dl>
-              <dt>Number 2</dt>
-              <dd>Supporting data here</dd>
-            </dl>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <dl>
-              <dt>Number 3</dt>
-              <dd>Supporting <span class="match">data</span> here</dd>
-            </dl>
-          </a>
-        </li>
-      </ul>
-      <section>
-        <h3>A section here</h3>
-        <div>
-          <button>Perform</button>
-          <button>Operation</button>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox">
-            <span>The label of the checkbox</span>
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" disabled="disabled">
-            <span>The label of the checkbox</span>
-          </label>
-        </div>
-      </section>
-      <section>
-        <h3>A section here</h3>
-        <div>
-          Some radio buttons here
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio">
-            <span>The label of the radio</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio">
-            <span>The label of the radio</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" disabled="disabled">
-            <span>The label of the radio</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio">
-            <span>The label of the radio</span>
-          </label>
-        </div>
-      </section>
-      <section>
-        <h3>Another section</h3>
-        <div class="row">
-          And some text content with a <a href="#">link</a>
-        </div>
-        <select>
-          <option>Google</option>
-          <option>Bing</option>
-          <option>Yahoo</option>
-        </select>
-        <select disabled="disabled">
-          <option>Google</option>
-          <option>Bing</option>
-          <option>Yahoo</option>
-        </select>
-      </section>
-    </div>
-    <div class="overlay">
-      <div class="page">
-        <div class="close-button"></div>
-        <h1>test</h1>
-        <div class="content-area">
-          this is some content
-        </div>
-        <div class="action-area">
-          <div class="action-area-right">
-            <div class="button-strip">
-              <button>Cancel</button>
-              <button>Okay</button>
+      <div class="content">
+        <ul class="highlighted">
+          <li>
+            <a href="#">
+              <dl>
+                <dt><span class="match">Number</span> 1</dt>
+                <dd>Supporting data here</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>Number 2</dt>
+                <dd>Supporting data here</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>Number 3</dt>
+                <dd>Supporting <span class="match">data</span> here</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+        <section>
+          <h3>A section here</h3>
+          <div>
+            <button>Perform</button>
+            <button>Operation</button>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <span>The label of the checkbox</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" disabled="disabled">
+              <span>The label of the checkbox</span>
+            </label>
+          </div>
+        </section>
+        <section>
+          <h3>A section here</h3>
+          <div>
+            Some radio buttons here
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              <span>The label of the radio</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              <span>The label of the radio</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" disabled="disabled">
+              <span>The label of the radio</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              <span>The label of the radio</span>
+            </label>
+          </div>
+        </section>
+        <section>
+          <h3>Another section</h3>
+          <div class="row">
+            And some text content with a <a href="#">link</a>
+          </div>
+          <select>
+            <option>Google</option>
+            <option>Bing</option>
+            <option>Yahoo</option>
+          </select>
+          <select disabled="disabled">
+            <option>Google</option>
+            <option>Bing</option>
+            <option>Yahoo</option>
+          </select>
+        </section>
+      </div>
+      <div class="overlay">
+        <div class="page">
+          <div class="close-button"></div>
+          <h1>test</h1>
+          <div class="content-area">
+            this is some content
+          </div>
+          <div class="action-area">
+            <div class="action-area-right">
+              <div class="button-strip">
+                <button>Cancel</button>
+                <button>Okay</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="two">
+      <header>
+        <h1>How about some text</h1>
+      </header>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor venenatis. Maecenas id est feugiat nulla blandit adipiscing consequat ac odio. Aliquam dictum sem neque, vestibulum feugiat leo. Nam et ante nisi. Vivamus fringilla tincidunt rutrum. Donec tincidunt tortor venenatis odio porttitor ultricies. Ut egestas tristique eros, quis vehicula augue tempus in. Phasellus luctus tristique elit ac molestie.</p>
+
+        <p>Donec at nisl at velit hendrerit tempor non et massa. Fusce neque magna, porta nec tincidunt quis, pellentesque in felis. Sed sagittis facilisis iaculis. Mauris adipiscing rhoncus eros id fermentum. Sed mattis consequat dolor et pellentesque. Nunc consequat felis vulputate urna porta id interdum nisi lacinia. Etiam porttitor porttitor nibh et fringilla. Sed auctor dapibus varius. Donec auctor egestas justo, sit amet rhoncus tellus porta nec.</p>
+
+        <p>Vivamus id commodo urna. Aliquam ut dolor eu dui tempor sollicitudin at sit amet sapien. Ut cursus lobortis feugiat. Fusce aliquam, est vel convallis ullamcorper, ante justo sodales odio, sed adipiscing odio erat sed risus. Sed viverra tortor tristique risus pretium volutpat ac ut justo. Nullam vulputate suscipit placerat. In hac habitasse platea dictumst. Cras facilisis lacus vel felis viverra fringilla. Praesent gravida, augue non aliquam auctor, tortor leo tincidunt quam, sed pretium massa urna ac magna. Morbi fringilla viverra neque, quis vulputate odio consequat nec. Maecenas gravida vulputate consectetur. In hac habitasse platea dictumst.i</p>
+      </div>
+    </div>
+    <div id="three">
+      <header>
+        <h1>Settings<span class="sub_title">Nothing to see here</span></h1>
+      </header>
     </div>
   </div>
 </body>
