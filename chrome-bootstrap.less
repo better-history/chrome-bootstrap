@@ -67,6 +67,12 @@ h3 {
     width: 738px;
     overflow-x: hidden;
   }
+  .content {
+    padding-top: 50px;
+  }
+  .with_controls .content {
+    padding-top: 100px;
+  }
   .view {
     -webkit-margin-start: 155px;
 
@@ -100,9 +106,10 @@ h3 {
 ============================================== */
 
 header {
-  max-width: 738px;
-  min-width: 600px;
-  position: relative;
+  position: fixed;
+  background: #FFF;
+  width: 738px;
+  z-index: 2;
 
   h1 {
     padding: 21px 0 13px;
