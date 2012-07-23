@@ -222,7 +222,7 @@ ul.menu {
 .highlightable {
   li {
     position: relative;
-    &:hover > a {
+    &:hover > a:not(.action) {
         background-color: #F0F6FE;
         color: #555;
     }
@@ -330,10 +330,6 @@ button {
   font: inherit;
   margin: 0 1px 0 0;
   text-shadow: 0 1px 0 #F0F0F0;
-}
-button.small {
-  padding: 1px 5px 2px;
-  min-height: 1em;
 }
 
 input[type='checkbox']:checked::before {
