@@ -271,7 +271,7 @@ ul.menu {
       }
     }
     .highlightable {
-      margin-left: 30px;
+      -webkit-margin-start: 30px;
     }
   }
 
@@ -523,6 +523,7 @@ select:active:enabled {
     min-width: 400px;
     padding: 0;
     position: relative;
+    overflow: hidden;
 
     h1 {
       -webkit-padding-end: 24px;
@@ -532,6 +533,9 @@ select:active:enabled {
       margin: 0;
       padding: 14px 17px 14px;
       text-shadow: white 0 1px 2px;
+    }
+    ul li {
+      padding: 5px 0;
     }
     .content-area {
       -webkit-box-flex: 1;
