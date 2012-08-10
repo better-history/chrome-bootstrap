@@ -5,7 +5,11 @@ body {
   margin: 0;
 }
 a {
+  border: none;
+  color: #15C;
+  cursor: pointer;
   text-decoration: none;
+  font-weight: normal;
   &:hover, &:focus {
     outline: none;
   }
@@ -27,7 +31,7 @@ button {
 /* Headings
 ============================================== */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   -webkit-user-select: none;
   font-weight: normal;
   line-height: 1;
@@ -44,6 +48,10 @@ h3 {
   font-size: 1.2em;
   margin-bottom: 0.8em;
 }
+h4 {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
 .sub_title {
   font-size:15px;
   margin:0 10px;
@@ -57,9 +65,9 @@ h3 {
 .frame {
   .navigation {
     height: 100%;
-    left: 0;
+    -webkit-margin-start: 0;
     position: fixed;
-    right: 15px;
+    -webkit-margin-end: 15px;
     width: 155px;
     z-index: 3;
   }
@@ -71,15 +79,12 @@ h3 {
     padding-top: 50px;
   }
   .with_controls .content {
-    padding-top: 100px;
+    padding-top: 104px;
   }
   .view {
     -webkit-margin-start: 155px;
 
     a {
-      border: none;
-      color: #15C;
-      cursor: pointer;
       font: inherit;
     }
   }
@@ -159,6 +164,7 @@ section {
   display: -webkit-box;
   overflow: hidden;
   padding: 13px 0;
+  position: relative;
 
   .text {
     display: inline-block;
@@ -255,14 +261,13 @@ ul.menu {
       border: none;
       border-radius: 2px;
       color: white;
-      font-weight: bold;
       opacity: 0;
       margin-top: 0;
       font-size: 10px;
       padding: 1px 6px;
       position: absolute;
       top: 8px;
-      right: 35px;
+      right: 32px;
       -webkit-transition: 150ms opacity;
       cursor: pointer;
 
@@ -271,7 +276,7 @@ ul.menu {
       }
     }
     .highlightable {
-      margin-left: 30px;
+      -webkit-margin-start: 30px;
     }
   }
 
@@ -282,13 +287,13 @@ ul.menu {
       display: block;
       opacity: 0;
       height: 6px;
-      width: 16px;
+      width: 6px;
       -webkit-transition: 150ms opacity;
       background-color: transparent;
       text-indent: -5000px;
       position: absolute;
       top: 7px;
-      right: 0px;
+      right: 5px;
 
       &:hover {
         background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAqklEQVR4XqWRMQ6DMAxF/1Fyilyj2SmIBUG5QcTCyJA5Z8jGhlBPgRi4TmoDraVmKFJlWYrlp/g5QfwRlwEVNWVa4WzfH9jK6kCkEkBjwxOhLghheMWMELUAqqwQ4OCbnE4LJnhr5IYdqQt4DJQjhe9u4vBBmnxHHNzRFkDGjHDo0VuTAqy2vAG4NkvXXDHxbGsIGlj3e835VFNtdugma/Jk0eXq0lP//5svi4PtO01oFfYAAAAASUVORK5CYII=");
@@ -500,7 +505,7 @@ select:active:enabled {
   -webkit-box-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
-  -webkit-transition: 200ms opacity;
+  -webkit-transition: opacity .2s;
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
   display: -webkit-box;
@@ -511,6 +516,15 @@ select:active:enabled {
   right: 0;
   top: 0;
   z-index: 5;
+  opacity: 1;
+
+  &.transparent {
+    opacity: 0;
+
+    .page {
+      -webkit-transform: scale(0.99) translateY(-20px);
+    }
+  }
 
   .page {
     -webkit-border-radius: 3px;
@@ -523,6 +537,29 @@ select:active:enabled {
     min-width: 400px;
     padding: 0;
     position: relative;
+    overflow: hidden;
+
+    @-webkit-keyframes pulse {
+     0% {
+       -webkit-transform: scale(1);
+     }
+     40% {
+       -webkit-transform: scale(1.02);
+      }
+     60% {
+       -webkit-transform: scale(1.02);
+      }
+     100% {
+       -webkit-transform: scale(1);
+     }
+    }
+
+    &.pulse {
+      -webkit-animation-duration: 180ms;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-name: pulse;
+      -webkit-animation-timing-function: ease-in-out;
+    }
 
     h1 {
       -webkit-padding-end: 24px;
@@ -532,6 +569,9 @@ select:active:enabled {
       margin: 0;
       padding: 14px 17px 14px;
       text-shadow: white 0 1px 2px;
+    }
+    ul li {
+      padding: 5px 0;
     }
     .content-area {
       -webkit-box-flex: 1;
