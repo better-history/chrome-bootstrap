@@ -230,7 +230,8 @@ ul.menu {
     position: relative;
     padding: 2px 0;
 
-    &:hover > a:not(.action) {
+    &:hover > a:not(.action),
+    a:not(.action):focus {
         background-color: #F0F6FE;
         color: #555;
     }
