@@ -35,7 +35,7 @@
         var modal = $('.overlay').clone();
         $(modal).removeAttr('style');
         $(modal).find('button').click(function() {
-          $('.overlay').addClass('transparent');
+          $(modal).addClass('transparent');
           setTimeout(function() {
             $(modal).remove();
           }, 1000);
