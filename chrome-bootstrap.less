@@ -35,6 +35,12 @@ h1, h2, h3, h4 {
   -webkit-user-select: none;
   font-weight: normal;
   line-height: 1;
+
+  small {
+    font-size:15px;
+    margin:0 10px;
+    color:#53637D;
+  }
 }
 h1 {
   -webkit-margin-after: 1em;
@@ -57,11 +63,6 @@ h4 {
   font-size: 1em;
   margin-bottom: 5px;
 }
-.sub_title {
-  font-size:15px;
-  margin:0 10px;
-  color:#53637D;
-}
 
 
 /* Layout
@@ -82,6 +83,9 @@ h4 {
   }
   .content {
     padding-top: 50px;
+    p {
+      text-align: justify;
+    }
   }
   .with_controls .content {
     padding-top: 104px;
@@ -211,7 +215,6 @@ ul.menu {
     }
 
     a {
-      background-color: white;
       border: 0;
       color: #999;
       cursor: pointer;
