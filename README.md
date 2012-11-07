@@ -16,5 +16,12 @@ Scope
 
 And that's it. Let's keep it simple!
 
+Pull requests
+----------------
 
-*Pull requests:* Work in `chrome-bootstrap.less` and include a generated `chrome-bootstrap.css` file using [less](http://lesscss.org/)
+Make sure to work in `chrome-bootstrap.less` and include a generated `chrome-bootstrap.css` file using the Less CSS compiler.
+
+    $ npm install -g less
+    $ lessc chrome-bootstrap.less > chrome-bootstrap.css
+
+More info at [lesscss.org](http://lesscss.org/)
