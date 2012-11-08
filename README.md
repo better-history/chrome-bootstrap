@@ -13,6 +13,7 @@ Scope
 * Reusable selectors
 * CSS animations
 * I18n'ed properties
+* Images encoded as strings
 
 And that's it. Let's keep it simple!
 
