@@ -135,6 +135,11 @@ header .corner {
 header .corner input[type="text"] {
   width: 210px;
 }
+header .corner.cancelable .delete {
+  opacity: 1;
+  top: 4px;
+  right: 5px;
+}
 /* View sections
 ============================================== */
 section {
