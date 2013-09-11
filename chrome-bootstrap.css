@@ -356,6 +356,9 @@
   background: #8AAAED;
   color: #FFF;
 }
+.chrome-bootstrap .highlightable li .tags li a {
+  padding: 0;
+}
 .chrome-bootstrap .highlightable li .action {
   -webkit-appearance: none;
   -webkit-transition: opacity 150ms;
