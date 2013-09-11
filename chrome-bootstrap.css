@@ -342,7 +342,15 @@
   overflow: hidden;
   white-space: nowrap;
   font-size: 10px;
-  margin-top: 3px;
+  margin-top: 5px;
+}
+.chrome-bootstrap .highlightable li .tags {
+  float: left;
+  margin-top: -1px;
+  font-size: 12px;
+}
+.chrome-bootstrap .highlightable li .tags li:last-child {
+  margin-right: 5px;
 }
 .chrome-bootstrap .highlightable li .action {
   -webkit-appearance: none;
