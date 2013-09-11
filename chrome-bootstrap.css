@@ -621,6 +621,9 @@
 .chrome-bootstrap .overlay .page ul li {
   padding: 5px 0;
 }
+.chrome-bootstrap .overlay .page ul.tags li {
+  padding: 2px 5px;
+}
 .chrome-bootstrap .overlay .page .content-area {
   -webkit-box-flex: 1;
   overflow: auto;
