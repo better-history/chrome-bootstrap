@@ -352,6 +352,10 @@
 .chrome-bootstrap .highlightable li .tags li:last-child {
   margin-right: 5px;
 }
+.chrome-bootstrap .highlightable li .tags li:hover > a:not(.action) {
+  background: #8AAAED;
+  color: #FFF;
+}
 .chrome-bootstrap .highlightable li .action {
   -webkit-appearance: none;
   -webkit-transition: opacity 150ms;

@@ -366,9 +366,16 @@
         margin-top: -1px;
         font-size: 12px;
 
-        li:last-child {
-          margin-right: 5px;
+        li {
+          &:last-child {
+            margin-right: 5px;
+          }
+          &:hover > a:not(.action) {
+            background: #8AAAED;
+            color: #FFF;
+          }
         }
+
       }
       .action {
         -webkit-appearance: none;
