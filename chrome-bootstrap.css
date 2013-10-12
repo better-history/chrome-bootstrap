@@ -21,6 +21,9 @@
   /* Pagination
   ============================================== */
 
+  /* Alert
+  ============================================== */
+
   /* Tags
   ============================================== */
 
@@ -224,6 +227,19 @@
 .chrome-bootstrap ol.pagination a.selected {
   background: #8AAAED;
   color: #FFF;
+}
+.chrome-bootstrap .alert {
+  border-radius: 3px;
+  background: rgba(147, 184, 252, 0.2);
+  display: block;
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  line-height: 17px;
+}
+.chrome-bootstrap .alert .delete {
+  top: 5px;
+  right: 6px;
+  opacity: 1;
 }
 .chrome-bootstrap ul.tags li {
   background: #8AAAED;
