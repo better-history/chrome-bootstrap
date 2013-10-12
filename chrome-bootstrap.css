@@ -21,6 +21,9 @@
   /* Pagination
   ============================================== */
 
+  /* Alert
+  ============================================== */
+
   /* Tags
   ============================================== */
 
@@ -225,6 +228,19 @@
   background: #8AAAED;
   color: #FFF;
 }
+.chrome-bootstrap .alert {
+  border-radius: 3px;
+  background: rgba(147, 184, 252, 0.2);
+  display: block;
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  line-height: 17px;
+}
+.chrome-bootstrap .alert .delete {
+  top: 5px;
+  right: 6px;
+  opacity: 1;
+}
 .chrome-bootstrap ul.tags li {
   background: #8AAAED;
   color: #FFF;
@@ -351,6 +367,13 @@
 }
 .chrome-bootstrap .highlightable li .tags li:last-child {
   margin-right: 5px;
+}
+.chrome-bootstrap .highlightable li .tags li:hover > a:not(.action) {
+  background: #8AAAED;
+  color: #FFF;
+}
+.chrome-bootstrap .highlightable li .tags li a {
+  padding: 0;
 }
 .chrome-bootstrap .highlightable li .action {
   -webkit-appearance: none;
@@ -613,6 +636,9 @@
 }
 .chrome-bootstrap .overlay .page ul li {
   padding: 5px 0;
+}
+.chrome-bootstrap .overlay .page ul.tags li {
+  padding: 2px 5px;
 }
 .chrome-bootstrap .overlay .page .content-area {
   -webkit-box-flex: 1;
