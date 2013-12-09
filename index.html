@@ -33,7 +33,7 @@
         ev.preventDefault();
         var modal = $('.overlay').clone();
         $(modal).removeAttr('style');
-        $(modal).find('button').click(function() {
+        $(modal).find('button, .close-button').click(function() {
           $(modal).addClass('transparent');
           setTimeout(function() {
             $(modal).remove();
@@ -342,6 +342,7 @@
           </div>
           <div class="overlay" style="display: none;">
             <div class="page">
+              <div class="close-button"></div>
               <h1>test</h1>
               <div class="content-area">
                 this is some content
