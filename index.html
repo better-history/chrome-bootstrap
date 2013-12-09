@@ -46,6 +46,9 @@
             $(this).removeClass('pulse');
           });
         });
+        $(modal).find('.page').click(function(ev) {
+          ev.stopPropagation();
+        });
         $('body').append(modal);
       });
 
@@ -342,8 +345,8 @@
           </div>
           <div class="overlay" style="display: none;">
             <div class="page">
-              <div class="close-button"></div>
               <h1>test</h1>
+              <div class="close-button"></div>
               <div class="content-area">
                 this is some content
               </div>
