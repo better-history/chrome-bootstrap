@@ -1,6 +1,7 @@
 .chrome-bootstrap {
   font-family: 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', sans-serif;
   font-size: 12px;
+  color: #303942;
   cursor: default;
   margin: 0;
 
@@ -8,8 +9,9 @@
     border: none;
     color: #15C;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: normal;
+
     &:hover, &:focus {
       outline: none;
     }
@@ -39,7 +41,7 @@
     small {
       font-size:15px;
       margin:0 10px;
-      color:#53637D;
+      color: #53637D;
     }
   }
   h1 {
@@ -47,11 +49,11 @@
     -webkit-margin-before: 21px;
     -webkit-margin-start: 23px;
     height: 18px;
-    color: #5C6166;
     font-size: 18px;
 
     a {
       color: #5C6166;
+      text-decoration: none;
     }
   }
   h3 {
@@ -82,7 +84,7 @@
       overflow-x: hidden;
     }
     .content {
-      padding-top: 50px;
+      padding-top: 55px;
       p {
         text-align: justify;
       }
@@ -121,7 +123,7 @@
 
   header {
     position: fixed;
-    background: #FFF;
+    background-image: -webkit-linear-gradient(#FFF, #FFF 40%, rgba(255, 255, 255, 0.92));
     width: 738px;
     z-index: 2;
 
@@ -207,6 +209,7 @@
       text-align: center;
       display: block;
       background: #F0F6FE;
+      text-decoration: none;
 
       &:hover, &.selected {
         background: #8AAAED;
@@ -245,6 +248,7 @@
 
       a {
         color: #FFF;
+        text-decoration: none;
 
         &:hover {
           text-decoration: underline;
@@ -365,6 +369,7 @@
         display: block;
         position: relative;
         z-index: 0;
+        text-decoration: none;
       }
       dt {
         font-size: 105%;
@@ -573,6 +578,7 @@
       box-shadow: 0 1px 0 rgba(80, 80, 80, 0.08),
           inset 0 1px 2px rgba(255, 255, 255, 0.75);
       color: #aaa;
+      cursor: default;
     }
   }
   select:disabled {
@@ -711,14 +717,18 @@
         padding: 6px 17px 6px;
       }
       .close-button {
-        background-image: url('chrome://resources/images/x.png');
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAUklEQVR4XqXPYQrAIAhAYW/gXd8NJxTopVqsGEhtf+L9/ERU2k/HSMFQpKcYJeNFI9Be0LCMij8cYyjj5EHIivGBkwLfrbX3IF8PqumVmnDpEG+eDsKibPG2JwAAAABJRU5ErkJggg==');
         background-position: center;
         background-repeat: no-repeat;
-        height: 24px;
+        height: 14px;
         position: absolute;
-        right: 10px;
-        top: 10px;
-        width: 24px;
+        right: 7px;
+        top: 7px;
+        width: 14px;
+
+        &:hover {
+          background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAnUlEQVR4XoWQQQ6CQAxFewjkJkMCyXgJPMk7AiYczyBeZEAX6AKctGIaN+bt+trk9wtGQc/IkhnoKGxqqiWxOSZalapWFZ6VrIUDExsN0a5JRBq9LoVOR0eEQMoEhKizXhhsn0p1sCWVo7CwOf1RytPL8CPvwuBUoHL6ugeK30CVD1TqK7V/hdpe+VNChhOzV8xWny/+xosHF8578W/Hmc1OOC3wmwAAAABJRU5ErkJggg==');
+        }
       }
       .action-area {
         -webkit-box-align: center;
