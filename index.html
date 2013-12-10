@@ -33,7 +33,7 @@
         ev.preventDefault();
         var modal = $('.overlay').clone();
         $(modal).removeAttr('style');
-        $(modal).find('button').click(function() {
+        $(modal).find('button, .close-button').click(function() {
           $(modal).addClass('transparent');
           setTimeout(function() {
             $(modal).remove();
@@ -45,6 +45,9 @@
           $(modal).find('.page').on('webkitAnimationEnd', function() {
             $(this).removeClass('pulse');
           });
+        });
+        $(modal).find('.page').click(function(ev) {
+          ev.stopPropagation();
         });
         $('body').append(modal);
       });
@@ -343,6 +346,7 @@
           <div class="overlay" style="display: none;">
             <div class="page">
               <h1>test</h1>
+              <div class="close-button"></div>
               <div class="content-area">
                 this is some content
               </div>
