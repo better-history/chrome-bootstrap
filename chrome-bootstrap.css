@@ -499,6 +499,7 @@
   min-width: 4em;
 }
 .chrome-bootstrap input[type='text'],
+.chrome-bootstrap input[type='number'],
 .chrome-bootstrap input[type='search'] {
   border: 1px solid #BFBFBF;
   border-radius: 2px;
@@ -520,6 +521,7 @@
 .chrome-bootstrap input[type='radio']:focus,
 .chrome-bootstrap input[type='search']:focus,
 .chrome-bootstrap input[type='text']:focus,
+.chrome-bootstrap input[type='number']:focus,
 .chrome-bootstrap button:focus {
   /* OVERRIDE */
 
@@ -548,6 +550,7 @@
   opacity: .75;
 }
 .chrome-bootstrap input[type='search']:disabled,
+.chrome-bootstrap input[type='number']:disabled,
 .chrome-bootstrap input[type='text']:disabled {
   color: #999;
 }
