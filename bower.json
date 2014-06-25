@@ -1,0 +1,20 @@
+{
+  "name": "chrome-bootstrap",
+  "version": "1.2.1",
+  "description": "Chrome UI bootstrap",
+  "main": "chrome-bootstrap.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "keywords": [
+    "google",
+    "chrome",
+    "extension",
+    "ui",
+    "bootstrap",
+    "settings",
+    "less"
+  ]
+}
