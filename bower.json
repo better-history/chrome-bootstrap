@@ -10,7 +10,12 @@
   "keywords": [
     "css",
     "bootstrap",
-    "chrome"
+    "chrome",
+    "extensions",
+    "ui",
+    "interface",
+    "less",
+    "google"
   ],
   "license": "MIT",
   "ignore": [
