@@ -419,7 +419,7 @@
   background-repeat: repeat-y;
   visibility: hidden;
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 2px;
 }
 .chrome-bootstrap .highlightable.draggable .handle:hover {
@@ -437,6 +437,7 @@
 }
 .chrome-bootstrap .highlightable.draggable li:hover .handle {
   visibility: visible;
+  z-index: 1;
 }
 .chrome-bootstrap .highlightable.draggable li > .item {
   padding-left: 15px;
