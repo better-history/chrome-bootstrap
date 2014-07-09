@@ -430,13 +430,47 @@
         opacity: 1;
       }
     }
+
+    &.draggable {
+      .handle {
+        width: 8px;
+        height: 41px;
+        background-image: linear-gradient(to bottom, #c1c1c1 50%, rgba(255, 255, 255, 0) 0%);
+        background-position: center;
+        background-size: 100% 17%;
+        background-repeat: repeat-y;
+        visibility: hidden;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+
+        &:hover {
+          cursor: move;
+          cursor: -webkit-grab;
+          display: block;
+        }
+        &:after {
+          margin-left: 3px;
+          width: 2px;
+          height: 41px;
+          background: #F0F6FE;
+          content: "";
+          display: block;
+        }
+      }
+      li:hover .handle {
+        visibility: visible;
+      }
+      li > .item {
+        padding-left: 15px;
+      }
+    }
   }
   .match {
     background: #f2f37b;
     display: inline-block;
     margin: 0 1px;
   }
-
 
   /* Input styling
   ============================================== */
