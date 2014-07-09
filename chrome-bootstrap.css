@@ -410,6 +410,37 @@
 .chrome-bootstrap .highlightable.editable li:hover > .delete {
   opacity: 1;
 }
+.chrome-bootstrap .highlightable.draggable .handle {
+  width: 8px;
+  height: 41px;
+  background-image: linear-gradient(to bottom, #c1c1c1 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: center;
+  background-size: 100% 17%;
+  background-repeat: repeat-y;
+  visibility: hidden;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.chrome-bootstrap .highlightable.draggable .handle:hover {
+  cursor: move;
+  cursor: -webkit-grab;
+  display: block;
+}
+.chrome-bootstrap .highlightable.draggable .handle:after {
+  margin-left: 3px;
+  width: 2px;
+  height: 41px;
+  background: #F0F6FE;
+  content: "";
+  display: block;
+}
+.chrome-bootstrap .highlightable.draggable li:hover .handle {
+  visibility: visible;
+}
+.chrome-bootstrap .highlightable.draggable li > .item {
+  padding-left: 15px;
+}
 .chrome-bootstrap .match {
   background: #f2f37b;
   display: inline-block;
