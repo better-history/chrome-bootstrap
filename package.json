@@ -3,6 +3,10 @@
   "version": "1.3.1",
   "description": "Reusable Chrome settings UI",
   "author": "Roy Kolak <roy.kolak@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/roykolak/chrome-bootstrap.git"
+  },
   "scripts": {
     "start": "./node_modules/less/bin/lessc chrome-bootstrap.less > chrome-bootstrap.css"
   },
