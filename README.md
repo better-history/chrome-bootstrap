@@ -2,6 +2,7 @@ Chrome UI bootstrap
 ================
 
 [![NPM version](https://badge.fury.io/js/chrome-bootstrap.svg)](http://badge.fury.io/js/chrome-bootstrap)
+[![Bower version](https://badge.fury.io/bo/chrome-bootstrap.svg)](http://badge.fury.io/bo/chrome-bootstrap)
 
 [Style guide](http://roykolak.github.com/chrome-bootstrap/)
 
