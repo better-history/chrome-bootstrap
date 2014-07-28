@@ -1,56 +1,39 @@
-.chrome-bootstrap {
-  font-family: 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', sans-serif;
+﻿.chrome-bootstrap {
+  font-family: 'Segoe UI', 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', sans-serif;
   font-size: 12px;
   color: #303942;
   cursor: default;
   margin: 0;
   /* Headings
   ============================================== */
-
   /* Layout
   ============================================== */
-
   /* Header
   ============================================== */
-
   /* View sections
   ============================================== */
-
   /* Control bar
   ============================================== */
-
   /* Pagination
   ============================================== */
-
   /* Alert
   ============================================== */
-
   /* Tags
   ============================================== */
-
   /* Main menu
   ============================================== */
-
   /* Icons
   ============================================== */
-
   /* Highlightable list
   ============================================== */
-
   /* Input styling
   ============================================== */
-
   /* Focused --------------------------------- */
-
   /* Disabled --------------------------------- */
-
   /* Hovering --------------------------------- */
-
   /* Active --------------------------------- */
-
   /* Modal
   ============================================== */
-
 }
 .chrome-bootstrap a {
   border: none;
@@ -495,7 +478,6 @@
   -webkit-padding-end: 20px;
   -webkit-padding-start: 6px;
   /* OVERRIDE */
-
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAWklEQVQokWNgoAOIAuI0PDiKaJMSgYCZmfkbkPkfHYPEQfJEG/b//3+FBQsWLGRjY/uJbBCIDxIHyRNtGDYDyTYI3UA+Pr4vFBmEbODbt2+bKDYIyUBWYtQBAIRzRP/XKJ//AAAAAElFTkSuQmCC), -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
   background-position: right center;
   background-repeat: no-repeat;
@@ -516,7 +498,6 @@
 }
 .chrome-bootstrap input[type='radio'] {
   /* OVERRIDE */
-
   border-radius: 100%;
   bottom: 3px;
   height: 15px;
@@ -556,11 +537,9 @@
 .chrome-bootstrap input[type='number']:focus,
 .chrome-bootstrap button:focus {
   /* OVERRIDE */
-
   -webkit-transition: border-color 200ms;
   /* We use border color because it follows the border radius (unlike outline).
        * This is particularly noticeable on mac. */
-
   border-color: #4d90fe;
   outline: none;
 }
@@ -574,8 +553,7 @@
 }
 .chrome-bootstrap select:disabled {
   /* OVERRIDE */
-
-  background-image: -webkit-image-set(url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAd0SU1FB9sLAxYEBKriBmwAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAABLSURBVCiRY2CgA4gC4jQ8OIpokxKBoKGh4T8uDJIn2rD///8rLFiwYCE2g0DiIHkSfIndQLIMwmYgRQYhG/j27dsmig1CMpCVGHUAo8FcsHfxfXQAAAAASUVORK5CYII=") 1 x), -webkit-linear-gradient(#f1f1f1, #f1f1f1 38%, #e6e6e6);
+  background-image: -webkit-image-set(url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAd0SU1FB9sLAxYEBKriBmwAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAABLSURBVCiRY2CgA4gC4jQ8OIpokxKBoKGh4T8uDJIn2rD///8rLFiwYCE2g0DiIHkSfIndQLIMwmYgRQYhG/j27dsmig1CMpCVGHUAo8FcsHfxfXQAAAAASUVORK5CYII=") 1x), -webkit-linear-gradient(#f1f1f1, #f1f1f1 38%, #e6e6e6);
 }
 .chrome-bootstrap input[type='checkbox']:disabled,
 .chrome-bootstrap input[type='radio']:disabled {
