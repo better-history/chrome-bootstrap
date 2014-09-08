@@ -532,6 +532,7 @@
 }
 .chrome-bootstrap input[type='text'],
 .chrome-bootstrap input[type='number'],
+.chrome-bootstrap input[type='password'],
 .chrome-bootstrap input[type='search'] {
   border: 1px solid #BFBFBF;
   border-radius: 2px;
@@ -583,6 +584,7 @@
 }
 .chrome-bootstrap input[type='search']:disabled,
 .chrome-bootstrap input[type='number']:disabled,
+.chrome-bootstrap input[type='password']:disabled,
 .chrome-bootstrap input[type='text']:disabled {
   color: #999;
 }
