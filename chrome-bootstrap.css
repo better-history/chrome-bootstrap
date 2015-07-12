@@ -548,6 +548,25 @@
 .chrome-bootstrap .checkbox {
   margin: 0.65em 0;
 }
+.chrome-bootstrap .link-button {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: transparent none !important;
+  border: none !important;
+  border-color: transparent !important;
+  color: #1155cc !important;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  padding: 0 4px;
+}
+.chrome-bootstrap .link-button:hover {
+  text-decoration: underline;
+}
+.chrome-bootstrap .link-button:active {
+  color: #052577 !important;
+  text-decoration: underline;
+}
 .chrome-bootstrap select:focus,
 .chrome-bootstrap input[type='checkbox']:focus,
 .chrome-bootstrap input[type='password']:focus,
