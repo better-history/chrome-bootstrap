@@ -2,5 +2,5 @@
 
 ## 1.5.0
 
-- add password field styling (@saveman71)
-- add link button styling (@AleksandarDev)
+- Add password field styling ([@saveman71](https://github.com/saveman71))
+- Add link button styling ([@AleksandarDev](https://github.com/AleksandarDev))
