@@ -7,6 +7,10 @@
     "type": "git",
     "url": "http://github.com/roykolak/chrome-bootstrap.git"
   },
+  "keywords": [
+    "chrome",
+    "bootstrap"
+  ],
   "scripts": {
     "start": "./node_modules/less/bin/lessc chrome-bootstrap.less > chrome-bootstrap.css"
   },
