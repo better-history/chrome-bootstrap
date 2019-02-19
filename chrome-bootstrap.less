@@ -560,10 +560,12 @@
     min-height: 2em;
     min-width: 4em;
   }
-  input[type='text'],
   input[type='number'],
   input[type='password'],
-  input[type='search'] {
+  input[type='search'],
+  input[type='text'],
+  input[type='url'],
+  textarea {
     border: 1px solid #BFBFBF;
     border-radius: 2px;
     box-sizing: border-box;
@@ -603,11 +605,14 @@
 
   select,
   input[type='checkbox'],
+  input[type='number'],
   input[type='password'],
   input[type='radio'],
+  input[type='range'],
   input[type='search'],
   input[type='text'],
-  input[type='number'],
+  input[type='url'],
+  textarea,
   button {
     &:focus {
       /* OVERRIDE */
@@ -637,15 +642,18 @@
     background-image: -webkit-image-set(url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAd0SU1FB9sLAxYEBKriBmwAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAABLSURBVCiRY2CgA4gC4jQ8OIpokxKBoKGh4T8uDJIn2rD///8rLFiwYCE2g0DiIHkSfIndQLIMwmYgRQYhG/j27dsmig1CMpCVGHUAo8FcsHfxfXQAAAAASUVORK5CYII=") 1x), -webkit-linear-gradient(#f1f1f1, #f1f1f1 38%, #e6e6e6);
   }
   input[type='checkbox'],
-  input[type='radio'] {
+  input[type='radio'],
+  input[type='range'] {
     &:disabled {
       opacity: .75;
     }
   }
-  input[type='search'],
   input[type='number'],
   input[type='password'],
-  input[type='text'] {
+  input[type='search'],
+  input[type='text'],
+  input[type='url'],
+  textarea {
     &:disabled {
       color: #999;
     }
