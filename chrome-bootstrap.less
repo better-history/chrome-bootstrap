@@ -560,10 +560,10 @@
     min-height: 2em;
     min-width: 4em;
   }
-  input[type='text'],
   input[type='number'],
   input[type='password'],
-  input[type='search'] {
+  input[type='search'],
+  input[type='text'] {
     border: 1px solid #BFBFBF;
     border-radius: 2px;
     box-sizing: border-box;
@@ -603,11 +603,11 @@
 
   select,
   input[type='checkbox'],
+  input[type='number'],
   input[type='password'],
   input[type='radio'],
   input[type='search'],
   input[type='text'],
-  input[type='number'],
   button {
     &:focus {
       /* OVERRIDE */
@@ -642,9 +642,9 @@
       opacity: .75;
     }
   }
-  input[type='search'],
   input[type='number'],
   input[type='password'],
+  input[type='search'],
   input[type='text'] {
     &:disabled {
       color: #999;
