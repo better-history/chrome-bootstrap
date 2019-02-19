@@ -533,7 +533,9 @@
 .chrome-bootstrap input[type='number'],
 .chrome-bootstrap input[type='password'],
 .chrome-bootstrap input[type='search'],
-.chrome-bootstrap input[type='text'] {
+.chrome-bootstrap input[type='text'],
+.chrome-bootstrap input[type='url'],
+.chrome-bootstrap textarea {
   border: 1px solid #BFBFBF;
   border-radius: 2px;
   box-sizing: border-box;
@@ -574,6 +576,8 @@
 .chrome-bootstrap input[type='radio']:focus,
 .chrome-bootstrap input[type='search']:focus,
 .chrome-bootstrap input[type='text']:focus,
+.chrome-bootstrap input[type='url']:focus,
+.chrome-bootstrap textarea:focus,
 .chrome-bootstrap button:focus {
   /* OVERRIDE */
 
@@ -604,7 +608,9 @@
 .chrome-bootstrap input[type='number']:disabled,
 .chrome-bootstrap input[type='password']:disabled,
 .chrome-bootstrap input[type='search']:disabled,
-.chrome-bootstrap input[type='text']:disabled {
+.chrome-bootstrap input[type='text']:disabled,
+.chrome-bootstrap input[type='url']:disabled,
+.chrome-bootstrap textarea:disabled {
   color: #999;
 }
 .chrome-bootstrap select:hover:enabled,

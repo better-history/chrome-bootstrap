@@ -563,7 +563,9 @@
   input[type='number'],
   input[type='password'],
   input[type='search'],
-  input[type='text'] {
+  input[type='text'],
+  input[type='url'],
+  textarea {
     border: 1px solid #BFBFBF;
     border-radius: 2px;
     box-sizing: border-box;
@@ -608,6 +610,8 @@
   input[type='radio'],
   input[type='search'],
   input[type='text'],
+  input[type='url'],
+  textarea,
   button {
     &:focus {
       /* OVERRIDE */
@@ -645,7 +649,9 @@
   input[type='number'],
   input[type='password'],
   input[type='search'],
-  input[type='text'] {
+  input[type='text'],
+  input[type='url'],
+  textarea {
     &:disabled {
       color: #999;
     }
